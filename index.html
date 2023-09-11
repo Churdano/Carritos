@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carritos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Predicación Pública</h1>
+  <div class="editable-textbox">
+    <h2>Mes de:</h2>
+    <div contenteditable="true" ></div>
+  </div>
+  <div class="container">
+    <div class="table-wrapper">
+      <table id="editable-table">
+        <tr>
+          <th>Día</th>
+          <th>10-12hs</th>
+          <th>15-17hs</th>
+          <th>8:30-10hs</th>
+        </tr>
+        <tr>
+          <td>Lunes</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <tr>
+          <td>Observaciones</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+      </table>
+    </div>
+    <button id="generate-image-btn">Generar Imagen</button>
+  </div>
+  <script src="html2canvas.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function execCmd(command, value = null) {
+      document.execCommand(command, false, value);
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
